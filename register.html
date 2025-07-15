@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Your Creative App</title>
+    
+    <!-- Tailwind CSS CDN (required for utility classes) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+<body>
+
+    <!-- The static wave background -->
+    <div class="wave-container"></div>
+
+    <div class="login-container min-h-screen flex flex-col items-center justify-center p-4">
+        
+        <!-- Registration Card -->
+        <div class="w-full max-w-sm bg-white rounded-2xl shadow-xl p-8">
+            <div class="text-center">
+                <!-- Logo -->
+                <h1 class="text-3xl font-black text-gray-900 mb-2">ariv.</h1>
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Create Account</h2>
+                <p class="text-gray-500 mb-6">Get started with a new account.</p>
+            </div>
+
+            <form action="#" method="POST"  id='register-form'>
+                <div class="space-y-5">
+                    <!-- Full Name Input -->
+                    <div>
+                        <label for="fullname" class="text-sm font-medium text-gray-700 sr-only">Full Name</label>
+                        <input id="fullname" name="fullname" type="text" autocomplete="name" required
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 outline-none"
+                            placeholder="Full Name">
+                    </div>
+
+                    <!-- Email Input -->
+                    <div>
+                        <label for="email" class="text-sm font-medium text-gray-700 sr-only">Email Address</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 outline-none"
+                            placeholder="Email Address">
+                    </div>
+
+                    <!-- Password Input -->
+                    <div>
+                        <label for="password" class="text-sm font-medium text-gray-700 sr-only">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="new-password" required
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 outline-none"
+                            placeholder="Password">
+                    </div>
+                    
+                    <!-- Confirm Password Input -->
+                    <div>
+                        <label for="confirm-password" class="text-sm font-medium text-gray-700 sr-only">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 outline-none"
+                            placeholder="Confirm Password">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit"
+                            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-200">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sign In Link -->
+        <p class="mt-6 text-center text-sm text-gray-600">
+            Already have an account?
+            <a href="index.html" class="font-medium text-indigo-600 hover:text-indigo-500">Sign in</a>
+        </p>
+    </div>
+
+    <!-- Link to your JavaScript file (optional, for future use) -->
+    <script src="js/register.js"></script>
+</body>
+</html>

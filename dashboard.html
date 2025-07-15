@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link to your dashboard stylesheet -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar for Profile and Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>ariv.</h1>
+            </div>
+            <div class="profile">
+                <img src="https://placehold.co/100x100/6366f1/ffffff?text=AV" alt="User Avatar" class="profile-avatar">
+                <h2 class="profile-name">Tony Stark</h2>
+                <p class="profile-email">tony.stark@example.com</p>
+                <p class="profile-org">Organization: <strong>Startup</strong></p>
+            </div>
+            <nav class="navigation">
+                <a href="#" class="nav-item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3"width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>My Profile</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Projects View -->
+            <section id="projects-view">
+                <h1 class="main-title">My Projects</h1>
+                <div class="project-list">
+                    <!-- Project Card 1 -->
+                    <div class="project-card" data-project-name="Project Alpha">
+                        <h3>Project Alpha</h3>
+                        <p>Developing a new mobile application for task management.</p>
+                        <div class="project-footer">
+                            <span>Due: 2025-12-01</span>
+                            <span class="status in-progress">In Progress</span>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card" data-project-name="Project Beta">
+                        <h3>Project Beta</h3>
+                        <p>Website redesign and migration to a new server infrastructure.</p>
+                        <div class="project-footer">
+                            <span>Due: 2025-11-15</span>
+                            <span class="status completed">Completed</span>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="project-card" data-project-name="Project Gamma">
+                        <h3>Project Gamma</h3>
+                        <p>Marketing campaign for the Q4 product launch.</p>
+                        <div class="project-footer">
+                            <span>Due: 2025-10-30</span>
+                            <span class="status on-hold">On Hold</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tasks View (Initially Hidden) -->
+            <section id="tasks-view" class="hidden">
+                <div class="tasks-header">
+                    <h1 id="tasks-title" class="main-title">Tasks for Project</h1>
+                    <button id="back-to-projects" class="btn">← Back to Projects</button>
+                </div>
+                <ul class="task-list">
+                    <!-- Task items will be dynamically added here by JS, but here's a sample -->
+                    <li>
+                        <input type="checkbox" id="task1" checked>
+                        <label for="task1">Design the user interface mockups.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="task2">
+                        <label for="task2">Set up the development environment.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="task3">
+                        <label for="task3">Develop the user authentication flow.</label>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Link to dashboard JavaScript -->
+    <script src="dashboard.js"></script>
+</body>
+</html>

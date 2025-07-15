@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Your Creative App</title>
+    
+    <!-- Tailwind CSS CDN (required for utility classes) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="css/index_page.css">
+
+</head>
+<body>
+
+    <script src="js/login.js" defer></script>
+
+
+    <!-- The static wave background -->
+    <div class="wave-container"></div>
+
+    <div class="login-container min-h-screen flex flex-col items-center justify-center p-4">
+        
+        <!-- Login Card -->
+        <div class="w-full max-w-sm bg-white rounded-2xl shadow-xl p-8">
+            <div class="text-center">
+                <!-- Logo -->
+                <h1 class="text-3xl font-black text-gray-900 mb-2">ariv.</h1>
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Welcome Back</h2>
+                <p class="text-gray-500 mb-6">Please sign in to continue.</p>
+            </div>
+
+            <form action="#" method="POST" id="login-form">
+                <div class="space-y-5">
+                    <!-- Email Input -->
+                    <div>
+                        <label for="email" class="text-sm font-medium text-gray-700 sr-only">Email Address</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 outline-none"
+                            placeholder="Email Address">
+                    </div>
+
+                    <!-- Password Input -->
+                    <div>
+                        <label for="password" class="text-sm font-medium text-gray-700 sr-only">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 outline-none"
+                            placeholder="Password">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit"
+                            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-200">
+                            Sign In
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sign Up Link -->
+        <p class="mt-6 text-center text-sm text-gray-600">
+            Don't have an account?
+            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Sign up</a>
+        </p>
+    </div>
+
+    <!-- Link to your JavaScript file (optional, for future use) -->
+    <!-- <script src="js/login.js"></script> -->
+</body>
+</html>
